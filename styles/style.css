@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "MinecraftFont";
+    src: url(Blockblueprint-LV7z5.ttf);
+}
+
+html {
+    font-family: MinecraftFont, Verdana, Geneva, Tahoma, sans-serif;
+}
+html:hover {
+    cursor: cell;
+}
+
+body {
+    background-color: beige;
+    background-image:  linear-gradient(#357266 1px, transparent 1px), linear-gradient(to right, #0E3B43 1px, #A3BBAD 1px);
+    background-size: 20px 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Info */
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.pack {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    padding: 8px;
+
+    background-color: white;
+    font-size: x-large;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    box-shadow: 16px 16px 0 0;
+}
+
+.pack a {
+    text-decoration: underline;
+}
+
+.pack a:hover {
+    cursor: pointer;
+}
+
+.header {
+    all: unset;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em;
+    margin-top: 10vmax;
+
+    width: 60%;
+    max-width: 630px;
+    height: 15vmax;
+    max-height: 270px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2em;
+}
+.header a {
+    all: unset;
+}
+.header a {
+    margin: 2em;
+    font-size: 2.4em;
+}
+
+.mdr {
+    display: inline;
+    width: 1em;
+
+
+    border-radius: 16px;
+}
+
+/* Featured */
+
+.featured {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.featured img {
+    width: 60%;
+    margin: 32px;
+    transition: 100ms;
+}
+.featured img:hover {
+    scale: 1.2;
+    transition: 100ms;
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .featured {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+        margin: auto;
+        margin-top: 64px;
+
+        width: 60%;
+    }
+    .featured img {
+        width: 100%;
+    }
+}
